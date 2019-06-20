@@ -1,0 +1,13 @@
+fastText-0.1.0
+*.bin
+*.vec
+*.pth
+*.pkl
+*.xml
+datasets/TrainingDatasets/all_agree.txt
+datasets/TrainingDatasets/all_agree_filtered.txt
+datasets/TrainingDatasets/all_training_sents.txt
+datasets/TrainingDatasets/majority_vote.txt
+datasets/TrainingDatasets/strict_section_based.txt
+datasets/TrainingDatasets/strict_section_based_filtered.txt
+datasets/TrainingDatasets/weak_labels.txt
