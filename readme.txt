@@ -37,4 +37,4 @@ To calculate MASI, there are two ways:
 			this will calculate the MASI value for two annotated XML files
 
 
-The reconciled files are in the directory: ~Zeshan/consort/datasets/Reconciliation042519. The total of 50 files. The test.txt.preprocessed and valid.txt.preprocessed file in "~Zeshan/consort/datasets/" contains sentences from all 50 annotated abstracts.
+The file "datasets/consort_golden_label_data.txt" contains sentences from all 50 annotated abstracts.
