@@ -36,10 +36,14 @@
 # Requirements:
 	You need to install fastai libraries and python3
 
-# 0. Use ULMFit/data_creation_consort.py to create the train.csv, valid.csv and test.csv from your dataset
+# 0. create train, valid, test data file from your dataset
+	python ULMFit/data_creation_consort.py
 
-# 1. Use ULMFit/finetune_consort.py to finetune the language model and train a classification model based on the dataset that is generated above (remember you may need to change some of the filenames in finetune_consort.py program to manipulate your dataset)
+# 1. finetune the language model and train a classification model based on the data file that is generated above
+	python ULMFit/finetune_consort.py
 
+# Remember:
+	You may need to change the filenames in the code to do different experiments
 
 
 # To calculate MASI, there are two ways:
