@@ -1,3 +1,5 @@
+Here is the procedure for training model using fasttext:
+
 0. Create validation and test dataset from reconciled files.
 	- I have a java program("PMCSentenceExtraction.java") to parse those reconciled XML files(Only "METHODS" section) to |-seperated txt files that will have the same format as our training files.
 		- it requires three input arguments: 1. the path to the directory that contains all reconciled files 2. the path to the output file that will contain sentences labels information. 3. the path to the output file that will contain all reconciled files IDs
@@ -26,7 +28,11 @@
 	- python test_fasttext_model.py [model_name]("fasttext-model") [path to the test file]("consort_datasets/test.txt.preprocessed")
 	- this prints out F1 scores, precisions and recalls for each label and overall
 
+To train model using ULMFit:
 
+0. Use ULMFit/data_creation_consort.py to create the train.csv, valid.csv and test.csv from your dataset
+
+1. Use ULMFit/finetune_consort.py to finetune the language model and train a classification model based on the dataset that is generated above (remember you may need to change some of the filenames in finetune_consort.py program to manipulate your dataset)
 
 
 
