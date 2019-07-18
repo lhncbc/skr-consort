@@ -3,7 +3,6 @@ fastText-0.1.0
 *.vec
 *.pth
 *.pkl
-*.xml
 datasets/TrainingDatasets/all_agree.txt
 datasets/TrainingDatasets/all_agree_filtered.txt
 datasets/TrainingDatasets/all_training_sents.txt
