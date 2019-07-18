@@ -1,19 +1,28 @@
-# To train model using ULMFit:
+# CONSORT adherence (Work in progress)
 
-# Requirements:
-	You need to install fastai libraries and python3
+## ULMFit training 
 
-# 0. create train, valid, test data file from your dataset
-	cd ULMFit
-	python data_creation_consort.py
-	(Need to copy ~Zeshan/consort/ULMFit/data/data_lm_consort.pkl & ~Zeshan/consort/ULMFit/data/enc_best_consort.pth to ULMFit/data/)
-	(Change the train file name in data_creation_consort.py if you want to change your train file)
+fastai libraries and python3 are required.
 
-# 1. finetune the language model and train a classification model based on the data file that is generated above
-	python finetune_consort.py
+1. create train, validation, test data file from the dataset
+- `cd ULMFit`
+- `python data_creation_consort.py` 
 
-# Remember:
-	You may need to change the filenames in the code to do different experiments
+Note: Copy `data_lm_consort.pkl` and `enc_best_consort.pth` to `ULMFit/data`. Change the train file name in `data_creation_consort.py` to train with a different file.
 
 
-# The file "datasets/consort_golden_label_data.txt" contains sentences from all 50 annotated abstracts.
+2. Finetune the language model and train a classification model based on the data file that is generated above
+- `python finetune_consort.py`
+
+Note:  The file `datasets/consort_golden_label_data.txt` contains sentences from all 50 annotated abstracts. Some file names are hardcoded in the scripts, so they may need to be changed.
+
+## Phrase-based heuristics
+
+`gov.nih.nlm.consort.pmc.ExtractionByPhrase`: assigns CONSORT items to Methods sentences using a simple phrase-based heuristics. It takes two arguments, XML input directory (`datasets/XML_50`) and the output file name (current output is in `phrase_heuristics_out.txt`). 
+
+`gov.nih.nlm.consort.pmc.Evaluation`: evaluates the output against the gold annotations. It takes two arguments, the output file name (e.g., `phrase_heuristics_out.txt`) and the gold annotations (`datasets/gold_50.txt`).
+ 
+ 
+## Contact
+
+- Halil Kilicoglu:      [halil.kilicoglu@gmail.com](mailto:halil.kilicoglu@gmail.com)

@@ -1,0 +1,37 @@
+1a|Title (Randomized)
+1b|Structured Abstract
+2a|Background
+2b|Objective
+3a|Trial Design
+3b|Changes TO Trial Design
+4a|Eligibility Criteria
+4b|Data Collection Setting
+5|Interventions
+6a|Outcomes
+6b|Changes to Outcomes
+7a|Sample Size Determination
+7b|Interim Analyses/Stopping Guidelines
+8a|Random Allocation Sequence Generation
+8b|Randomization Type
+9|Allocation Concealment Mechanism
+10|Randomization Implementation
+11a|Blinding Procedure
+11b|Similarity of Interventions
+12a|Statistical Methods for Outcome Comparison
+12b|Statistical Methods for Other Analyses
+13a|Participant Flow
+13b|Participant Loss and Exclusion
+14a|Recruitment Period/Follow-Up
+14b|Trial Stopping
+15|Baseline Data
+16|Numbers Analyzed
+17a|Outcome Results
+17b|Binary Outcome Results
+18|Ancillary Analyses
+19|Harms
+20|Limitations
+21|Generalizability
+22|Interpretation
+23|Registry/Number
+24|Protocol Access
+25|Funding
